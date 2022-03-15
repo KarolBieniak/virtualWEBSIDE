@@ -1,0 +1,81 @@
+.pageMain{
+    display: flex;
+    min-height: 591px;
+}
+/* lewa strona baneru (main pod headerem) */
+.bannerLeft{
+    background-color: aqua;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+/* prawa strona baneru (main pod headerem) */
+.bannerRight{
+    background-image: url(../images/banerimg.jpg);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+/* div wewnatrz banera left */
+.bannerInfo{
+    width: 540px;
+}
+/* tytul strony (vr) */
+.bannerInfo>h1{
+    font-weight: 400;
+    color:rgb(0, 0, 255) ;
+    margin-bottom: 20px;
+    font-size: 60px;
+    position: relative;
+    padding-top: 20px;
+}
+/* pozioma kreska nad tytulem  */
+.bannerInfo>h1::before{
+    content: "";
+    position: absolute;
+    height: 6px;
+    background-color: $color_primary;
+    width: 110px;
+    top: 0;
+    
+}
+/* opis pod tłem */
+.bannerInfo>p{
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 18px;
+    }
+/* tekst miedzy opisem w bannerze, a przyciskiem */
+.bannerInfo>link{
+    font-weight: 500;
+    margin: 20px 0px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    }
+
+    .link>a{
+        color: #111111;
+    }
+/* przycisk */
+.bannerInfo>button{
+    background-color:#654aff;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    /* line-heiht wysokosc na ktorej lezy tekst */
+    padding: 30px 60px;
+    line-height: 5px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    }
+/* efekt po najechaniu przycisk */
+    .bannerInfo>button:hover{
+        background-color: transparent;
+        color: #111111;
+        border: 1px solid rgb(161, 161, 161);
+    }
